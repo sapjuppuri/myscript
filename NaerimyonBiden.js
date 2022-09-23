@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name	   Naerimyeon Biden
-// @namespace	   Naerimyeon.Biden
-// @description	   내리면 바이든
+// @name	   Nalimyeon Biden
+// @namespace	   Nalimyeon.Biden
+// @description	   날리면 바이든
 // @include	   *
 // @exclude	   file://*
 // @version	   1
@@ -111,25 +111,7 @@
                 }
             }
 
-            var rchar_xx = function () {
-                var candidates = arguments;
-                for (var i = 0; i < candidates.length; i++) {
-                    var pivot = "." + candidates[i];
-                    var args = [pivot];
-                    for (var j = 0; j < candidates.length; j++) {
-                        if (i == j) continue;
-                        args.push(_xx(candidates[j]));
-                    }
-                    char.apply(this, args);
-                }
-            }
-
-            var rchar_x = function (a, b) {
-                char("." + a + "$", _xx(b));
-                char("." + b, _xx(a));
-            }
-
-            rword("내리면", "바이든");
+            rword("날리면", "바이든");
         })();
 
         var findMatch = function (arr, func) {
