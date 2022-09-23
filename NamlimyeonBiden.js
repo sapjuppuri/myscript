@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name	   Nalimyeon Biden
 // @namespace	   Nalimyeon.Biden
-// @description	   날리면 바이든
+// @description	   바이든 날리면
 // @include	   *
 // @exclude	   file://*
 // @version	   1
@@ -111,7 +111,7 @@
                 }
             }
 
-            rword("날리면", "바이든");
+            rword("바이든", "날리면");
         })();
 
         var findMatch = function (arr, func) {
